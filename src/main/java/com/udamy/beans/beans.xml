@@ -7,6 +7,8 @@
     <!-- bean definitions here -->
     <bean id = "second"
           class = "com.udamy.spring.Second">
+          <constructor-arg value="007" name="id"></constructor-arg>
+          <constructor-arg value="Jarvis" name="name"></constructor-arg>
+        <property name="empId" value="777"></property>
     </bean>
-
 </beans>

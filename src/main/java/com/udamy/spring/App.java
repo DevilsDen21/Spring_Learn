@@ -7,5 +7,6 @@ public class App {
         ApplicationContext context = new FileSystemXmlApplicationContext("src/main/java/com/udamy/beans/beans.xml");
         Second second = (Second) context.getBean("second");
         second.print();
+        System.out.println(second);
     }
 }
