@@ -1,3 +1,5 @@
-/target
-.idea
+#ignoring target folder
+target/
+#ignoring .idea folder
+.idea/
 UdamySpring.iml
