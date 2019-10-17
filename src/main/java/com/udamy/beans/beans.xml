@@ -10,5 +10,11 @@
           <constructor-arg value="007" name="id"></constructor-arg>
           <constructor-arg value="Jarvis" name="name"></constructor-arg>
         <property name="empId" value="777"></property>
+        <property name="info" ref="info"></property>
+    </bean>
+    <bean id = "info"
+          class="com.udamy.spring.Info">
+           <constructor-arg name="street" value="277th Watson"></constructor-arg>
+           <constructor-arg name="postalCode" value="2110092"></constructor-arg>
     </bean>
 </beans>

@@ -4,6 +4,8 @@ public class Second {
     private int id;
     private String name;
     private int empId;
+    private Info info;
+
     public Second(){}
     public Second(int id, String name){
         this.id = id;
@@ -21,8 +23,17 @@ public class Second {
         this.empId = empId;
     }
 
+    public Info getInfo() {
+        return info;
+    }
+
+    public void setInfo(Info info) {
+        this.info = info;
+    }
+
     @Override
     public String toString(){
-        return "my ID is "+ id + " and my Name is "+ name + " My Emp code is " + empId;
+        return "my ID is "+ id + " and my Name is "+ name + " My Emp code is " + empId +
+                " Address: "+ info;
     }
 }
