@@ -6,11 +6,12 @@
 
     <!-- bean definitions here -->
     <bean id = "second"
-          class = "com.udamy.spring.Second">
+          class = "com.udamy.spring.Second" scope="singleton">
           <constructor-arg value="007" name="id"></constructor-arg>
           <constructor-arg value="Jarvis" name="name"></constructor-arg>
         <property name="empId" value="777"></property>
         <property name="info" ref="info"></property>
+
     </bean>
     <bean id = "info"
           class="com.udamy.spring.Info">
