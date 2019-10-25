@@ -6,13 +6,17 @@ public class Second {
     private int empId;
     private Info info;
 
+    public static  Second getInstance(int id, String name){
+        System.out.println("Creating Instance");
+        return new Second(id,name);
+    }
     public Second(){}
     public Second(int id, String name){
         this.id = id;
         this.name = name;
     }
     public void print(){
-        System.out.println("Sup my dudes ");
+        System.out.println("Inside the class Second ");
     }
 
     public int getEmpId() {
